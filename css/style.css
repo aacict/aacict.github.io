@@ -466,6 +466,12 @@ header #newsletter label {
   max-width: 80%;
 }
 
+.skills-left {
+  overflow-y: scroll;
+  height: 396px;
+  padding-right: 50px;
+}
+
 .about .skills-content .progressbar-area h6 {
   margin-bottom: 21px;
   font-weight: 500;
