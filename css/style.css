@@ -302,7 +302,6 @@ header #newsletter label {
 .welcome-text p {
   color: #fff;
   margin-bottom: 35px;
-  max-width: 500px;
 }
 
 .welcome-text #typed span {
@@ -335,6 +334,17 @@ header #newsletter label {
 
 .welcome-text a {
   margin: 0px 5px;
+}
+
+/*---------------------Expertise-------------------*/
+.imgBg #expertise {
+  background: url(../images/aboutBg.jpg);
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+}
+
+.vantaBg #expertise {
+  background: #474747;
 }
 
 /*---------------------About-------------------*/
@@ -637,7 +647,7 @@ header #newsletter label {
   height: 1px;
   background: #fff;
   position: absolute;
-  left: 45px;
+  /* left: 45px; */
   top: 12px;
 }
 
@@ -648,7 +658,7 @@ header #newsletter label {
   background: #fff;
   position: absolute;
   top: 12px;
-  right: 47px;
+  /* right: 47px; */
 }
 
 .resume .resume-content {

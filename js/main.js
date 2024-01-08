@@ -62,77 +62,25 @@
        * -----------------------------------------------------------------
        */
 
-      var skill = $(".about");
+      // var skill = $(".expertise");
 
-      var width1 = $(".prog1").data("progress");
-      var progBar1 = $(".prog1");
-      skill.waypoint(
-        function() {
-          progBar1.css({
-            width: width1,
-            transition: "2s ease-in"
-          });
-        },
-        {
-          offset: width1
-        }
-      );
+      // $('.exertise ul li').each((index) => {
+      //   console.log('Index: ' + index + ', Text: ' + $(this).text());
+      // });
 
-      var width2 = $(".prog2").data("progress");
-      var progBar2 = $(".prog2");
-      skill.waypoint(
-        function() {
-          progBar2.css({
-            width: width2,
-            transition: "2s ease-in"
-          });
-        },
-        {
-          offset: width2
-        }
-      );
-
-      var width3 = $(".prog3").data("progress");
-      var progBar3 = $(".prog3");
-      skill.waypoint(
-        function() {
-          progBar3.css({
-            width: width3,
-            transition: "2s ease-in"
-          });
-        },
-        {
-          offset: width3
-        }
-      );
-
-      var width4 = $(".prog4").data("progress");
-      var progBar4 = $(".prog4");
-      skill.waypoint(
-        function() {
-          progBar4.css({
-            width: width4,
-            transition: "2s ease-in"
-          });
-        },
-        {
-          offset: width4
-        }
-      );
-
-      var width5 = $(".prog5").data("progress");
-      var progBar5 = $(".prog5");
-      skill.waypoint(
-        function() {
-          progBar5.css({
-            width: width5,
-            transition: "2s ease-in"
-          });
-        },
-        {
-          offset: width5
-        }
-      );
+      // var width1 = $(".prog0").data("progress");
+      // var progBar = $(".prog0");
+      // skill.waypoint(
+      //   () => {
+      //     progBar.css({
+      //       width: 90,
+      //       transition: "2s ease-in"
+      //     });
+      //   },
+      //   {
+      //     offset: 0
+      //   }
+      // );
 
       /*
        * -----------------------------------------------------------------
@@ -154,53 +102,6 @@
         resizeDuration: 200,
         wrapAround: true,
         showImageNumberLabel: false
-      });
-
-      /*
-       * -----------------------------------------------------------------
-       *-----------------------------Ajax Chimp---------------------------
-       * -----------------------------------------------------------------
-       */
-
-      var chimpForm = $("#mc-form");
-
-      chimpForm.ajaxChimp({
-        url:
-          "https://tahsinscreation.us17.list-manage.com/subscribe/post?u=8d43c37bb4dbc0d0b8078d874&amp;id=c638bf1e04"
-      });
-
-      /*
-       * -----------------------------------------------------------------
-       *----------------------Contact form ajax---------------------------
-       * -----------------------------------------------------------------
-       */
-
-      var contactSubmit = $("#contact-submit");
-
-      contactSubmit.on("click", function(e) {
-        e.preventDefault();
-        var name = $("#form-name").val();
-        var email = $("#form-email").val();
-        var subject = $("#form-subject").val();
-        var message = $("#form-message").val();
-        var form = new Array({
-          name: name,
-          email: email,
-          subject: subject,
-          message: message
-        });
-        $.ajax({
-          type: "POST",
-          url: "contact.php",
-          data: {
-            action: "contact",
-            form: form
-          }
-        }).done(function(data) {
-          var conResult = $("#contact .result");
-          conResult.html(data);
-          $(".contact-form-area")[0].reset();
-        });
       });
 
       /*
@@ -305,13 +206,13 @@
       verticalCentered: true,
       sectionsColor: [],
       anchors: [
-        "home",
-        "about",
+        "intro",
+        "why-me",
+        "expertise",
+        "qualifications",
+        "working-process",
         "service",
-        "resume",
-        "portfolio",
-        "work",
-        "contact"
+        "portfolio"
       ],
       scrollingSpeed: 700,
       easing: "swing",
@@ -334,6 +235,7 @@
       afterRender: function() {},
       afterLoad: function(anchorLink, index) {}
     });
+
 
     /*
      * -----------------------------------------------------------------
