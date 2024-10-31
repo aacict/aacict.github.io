@@ -210,8 +210,6 @@
         "why-me",
         "expertise",
         "qualifications",
-        "working-process",
-        "service",
         "portfolio"
       ],
       scrollingSpeed: 700,
